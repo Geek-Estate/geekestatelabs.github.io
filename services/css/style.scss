@@ -297,19 +297,23 @@ a {
 
 }
 
+.section-team .wrapper {
+  padding: 0;
+}
+
   .team-card {
     background-color: #262626;
     color: #fff;
     display: flex;
     flex-direction: column;
-    height: 480px;
+    height: 600px;
     margin-right: 15px;
   }
 
     .team-card__img {
         width: 100%;
         object-fit: cover;
-        height: 250px;
+        height: 350px;
     }
 
     .team-card__content {
@@ -330,6 +334,11 @@ a {
     }
 
 @media screen and (min-width: 768px) {
+  .section-team .wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   .team-list {
     padding-top: 70px;
     display: grid;
@@ -341,6 +350,7 @@ a {
       flex-direction: row;
       height: 450px;
       margin: auto;
+      max-width: 100%;
     }
 
       .team-card__content {
